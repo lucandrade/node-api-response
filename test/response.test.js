@@ -7,6 +7,7 @@ describe('Function: response', function () {
         assert.strictEqual("::some-data::", responseData.payload);
         assert.strictEqual("::some-message::", responseData.message);
         assert.strictEqual("::some-code::", responseData.code);
+        assert.strictEqual(true, responseData.success);
     });
 
     it('Will mount json for json payload', function () {

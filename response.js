@@ -1,9 +1,10 @@
-function response(body, message = null, code = null) {
+function response(body, message = null, code = null, success = true) {
     return {
         payload: body,
         message: message,
         code: code,
-        date: (new Date()).toUTCString()
+        date: (new Date()).toUTCString(),
+        success,
     };
 }
 

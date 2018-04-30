@@ -7,6 +7,7 @@ describe('Function: error', function () {
 
         assert.strictEqual("::some-message::", responseData.message);
         assert.strictEqual("::some-code::", responseData.code);
+        assert.strictEqual(false, responseData.success);
     });
 
     it('Will return null payload', function () {
